@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas</title>
+    <style>
+        body{
+            font-family: arial;
+        }
+        table{
+            width: 500px;
+            border-collapse: collapse
+        }
+        td, th{
+            border: 1px solid black;
+            padding: 10px;
+        }
+
+        thead, tfoot{
+            background-color: gray;
+            color: white;
+        }
+
+        tbody > tr:nth-child(2n){
+            background-color: lightgray;
+        }
+        td:first-child{
+            text-align: left;
+        }
+
+        caption{
+            padding: 10px;
+            font-size: 1.2em;
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: gray;
+            color: white
+        }
+
+        
+    </style>
+</head>
+<body>
+    <h1>Uso de tabelas grandes</h1>
+    <!--
+        ANATOMIA PARA TABELAS GRANDES
+        TABLE
+            THEAD
+                TR, TD, TH
+            TBODY
+                TR, TD, TH
+            TFOOT
+                TR, TD, TH
+    
+    -->
+    <table>
+        <caption> População das unidades Federais</caption>
+        <thead>
+            <tr>
+                <th>Estado</th>
+                <th scope="col" style="width: 50px;">População</th>
+
+            </tr>
+        </thead>
+        <tbody>
+                <td> São paulo</td>
+                <td> 45 919 049</td>
+                <tr>
+                    <td>Minas gerais</td>
+                    <td>17 264 943</td>
+                </tr>
+                <tr>
+                    <td>Rio de janeiro</td>
+                    <td>17 264 943</td>
+                </tr>
+                
+                
+
+        </tbody>
+        <tfoot>
+                <tr>
+                    <th>Total de habitantes</th>
+                    <td>0000</td>
+                </tr>
+
+        </tfoot>
+    </table>
+</body>
+</html>
