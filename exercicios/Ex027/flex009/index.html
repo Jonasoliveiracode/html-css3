@@ -8,12 +8,16 @@
         div.container {
             background-color: lightgreen;
             display: flex;
+            flex-flow: row wrap;
+            
             
         }
 
         div.item {
             background-color: peru;
-            flex: auto;
+            border: 1px solid black;
+            flex-basis: 150px;
+            text-align: center;
             
         }
     </style>
@@ -21,11 +25,11 @@
 <body>
     <div class="container">
         <div class="item"> A</div>
-        <div class="item"> B</div>
-        <div class="item"> C</div>
+        <div class="item">Outro conteudo </div>
+        <div class="item">conteudo um pouco maior </div>
         <div class="item"> D</div>
         <div class="item"> E</div>
-        <div class="item"> F</div>
+        <div class="item"> conteudo maior ainda, que vai ocupar mais espaco </div>
     </div>
 </body>
 </html>
